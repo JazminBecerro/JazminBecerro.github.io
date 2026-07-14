@@ -2,63 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    Jazmín Becerro | Business Intelligence Analyst
-  </title>
-
-  <meta
-    name="description"
-    content="Business Intelligence portfolio of Jazmín Becerro, specializing in Power BI, Microsoft Fabric, Databricks, SQL, dashboard development and data visualization."
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jazmín Becerro | Business Intelligence Consultant</title>
+  <meta name="description" content="Business Intelligence Consultant specializing in Power BI, Microsoft Fabric, Databricks, SQL, dashboard development, data visualization and analytics solutions.">
+  <meta name="keywords" content="Business Intelligence, Power BI, Microsoft Fabric, Databricks, SQL, Data Visualization, Dashboard Development, BI Consultant">
+  <meta name="author" content="Jazmín Becerro">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2563eb">
+  <meta property="og:title" content="Jazmín Becerro | Business Intelligence Consultant">
+  <meta property="og:description" content="End-to-end Business Intelligence solutions, from business requirements to clear, actionable dashboards.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jazminbecerro.github.io">
 
   <style>
     :root {
-      --background: #f7f9fc;
+      --background: #f6f8fb;
       --surface: #ffffff;
-      --text: #182230;
-      --muted: #5f6b7a;
+      --text: #172033;
+      --muted: #667085;
       --primary: #2563eb;
       --primary-dark: #1d4ed8;
-      --border: #e2e8f0;
       --soft-blue: #eaf2ff;
       --soft-gray: #f1f5f9;
-      --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+      --border: #e2e8f0;
+      --shadow: 0 16px 42px rgba(15, 23, 42, 0.07);
       --radius: 18px;
       --max-width: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
     body {
-      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
       background: var(--background);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(92%, var(--max-width));
-      margin: 0 auto;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(92%, var(--max-width)); margin: 0 auto; }
 
     nav {
       position: sticky;
@@ -68,7 +51,6 @@
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(12px);
     }
-
     .nav-content {
       min-height: 72px;
       display: flex;
@@ -76,134 +58,76 @@
       justify-content: space-between;
       gap: 24px;
     }
-
-    .brand {
-      font-size: 1.1rem;
-      font-weight: 800;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
+    .brand { font-size: 1.08rem; font-weight: 800; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 22px; color: var(--muted); font-size: 0.94rem; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--primary); }
 
     .hero {
-      padding: 110px 0 90px;
+      padding: 112px 0 92px;
       background:
-        radial-gradient(circle at 85% 15%, #dbeafe 0, transparent 32%),
-        radial-gradient(circle at 70% 70%, #ede9fe 0, transparent 22%),
-        linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+        radial-gradient(circle at 86% 16%, #dbeafe 0, transparent 31%),
+        radial-gradient(circle at 72% 76%, #ede9fe 0, transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
     }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
+    .hero-content { max-width: 900px; }
     .eyebrow {
       display: inline-block;
-      margin-bottom: 18px;
-      padding: 7px 12px;
+      margin-bottom: 20px;
+      padding: 7px 13px;
       border-radius: 999px;
       background: var(--soft-blue);
       color: var(--primary-dark);
-      font-weight: 700;
       font-size: 0.85rem;
+      font-weight: 750;
     }
-
     h1 {
+      max-width: 900px;
       margin-bottom: 22px;
-      font-size: clamp(2.7rem, 7vw, 5.4rem);
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
       line-height: 1.02;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.052em;
     }
-
     .hero-description {
-      max-width: 760px;
+      max-width: 780px;
       margin-bottom: 28px;
       color: var(--muted);
       font-size: clamp(1.05rem, 2vw, 1.25rem);
     }
-
-    .tech-line {
-      margin-bottom: 34px;
-      color: #334155;
-      font-weight: 700;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
+    .tech-line { margin-bottom: 34px; color: #334155; font-weight: 700; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; }
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 48px;
       padding: 0 20px;
+      border: 1px solid transparent;
       border-radius: 10px;
-      font-weight: 700;
-      transition: 0.2s ease;
+      font-weight: 750;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
+    .button-primary { background: var(--primary); color: #ffffff; }
+    .button-primary:hover, .button-primary:focus-visible { background: var(--primary-dark); transform: translateY(-2px); }
+    .button-secondary { background: #ffffff; border-color: var(--border); }
+    .button-secondary:hover, .button-secondary:focus-visible { border-color: #94a3b8; transform: translateY(-2px); }
 
-    .button-primary {
-      background: var(--primary);
-      color: white;
-    }
-
-    .button-primary:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-
-    .button-secondary {
-      background: white;
-      border: 1px solid var(--border);
-    }
-
-    .button-secondary:hover {
-      border-color: #94a3b8;
-      transform: translateY(-2px);
-    }
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-header {
-      max-width: 760px;
-      margin-bottom: 42px;
-    }
-
+    section { padding: 88px 0; }
+    .section-header { max-width: 780px; margin-bottom: 42px; }
     .section-label {
       margin-bottom: 10px;
       color: var(--primary);
       font-size: 0.78rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.1em;
     }
-
     h2 {
       margin-bottom: 14px;
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(2rem, 5vw, 3.15rem);
       line-height: 1.1;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.038em;
     }
-
-    .section-description {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
+    .section-description { color: var(--muted); font-size: 1.04rem; }
     .card {
       padding: 30px;
       background: var(--surface);
@@ -212,68 +136,25 @@
       box-shadow: var(--shadow);
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 28px;
-    }
+    .about-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 28px; }
+    .about-text p + p { margin-top: 16px; }
+    .facts { display: grid; gap: 14px; }
+    .fact { padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+    .fact:last-child { padding-bottom: 0; border-bottom: 0; }
+    .fact strong { display: block; font-size: 1.18rem; }
+    .fact span { color: var(--muted); font-size: 0.92rem; }
 
-    .about-text p + p {
-      margin-top: 16px;
-    }
-
-    .facts {
-      display: grid;
-      gap: 14px;
-    }
-
-    .fact {
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .fact:last-child {
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-
-    .fact strong {
-      display: block;
-      font-size: 1.2rem;
-    }
-
-    .fact span {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .services-grid,
-    .tools-grid,
-    .company-grid,
-    .experience-grid,
-    .certifications-grid {
+    .services-grid, .tools-grid, .experience-grid, .certifications-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
-
-    .service-card h3,
-    .tool-card h3,
-    .company-card h3,
-    .experience-card h3,
-    .certification-card h3 {
+    .company-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .service-card h3, .tool-card h3, .company-card h3, .experience-card h3, .certification-card h3 {
       margin-bottom: 10px;
       font-size: 1.15rem;
     }
-
-    .service-card p,
-    .tool-card p,
-    .company-card p,
-    .experience-card p,
-    .certification-card p {
-      color: var(--muted);
-    }
-
+    .service-card p, .tool-card p, .company-card p, .experience-card p, .certification-card p { color: var(--muted); }
     .tag {
       display: inline-block;
       margin-top: 18px;
@@ -285,60 +166,52 @@
       font-weight: 700;
     }
 
-    .company-card {
-      min-height: 245px;
+    .trusted-section {
+      padding: 38px 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
-
-    .company-period {
-      display: block;
-      margin-bottom: 12px;
-      color: var(--primary);
-      font-size: 0.85rem;
+    .trusted-title {
+      margin-bottom: 25px;
+      color: var(--muted);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.76rem;
       font-weight: 800;
     }
-
-    .experience-card {
-      min-height: 285px;
+    .logo-strip { display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; gap: 20px; }
+    .logo-box {
+      height: 86px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
     }
+    .logo-box img { width: 100%; height: 56px; object-fit: contain; }
 
+    .company-card { min-height: 245px; }
+    .company-period { display: block; margin-bottom: 12px; color: var(--primary); font-size: 0.85rem; font-weight: 800; }
+
+    .experience-card { min-height: 390px; display: flex; flex-direction: column; }
+    .client-logo { height: 68px; margin-bottom: 24px; display: flex; align-items: center; justify-content: flex-start; }
+    .client-logo img { max-width: 190px; max-height: 64px; object-fit: contain; object-position: left center; }
     .industry {
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 9px;
       color: var(--primary);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
-
-    .experience-card ul {
-      margin-top: 16px;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    .experience-card li + li {
-      margin-top: 8px;
-    }
-
-    .certification-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 275px;
-    }
-
-    .certification-provider {
-      margin-bottom: 10px;
-      color: var(--primary);
-      font-weight: 750;
-    }
-
-    .certification-card .button {
-      width: 100%;
-      margin-top: 24px;
-    }
-
+    .client-area { margin-bottom: 13px; color: #334155; font-weight: 750; }
+    .experience-card ul { margin-top: 15px; padding-left: 20px; color: var(--muted); }
+    .experience-card li + li { margin-top: 7px; }
     .confidentiality-note {
       margin-top: 28px;
       padding: 20px 24px;
@@ -348,99 +221,50 @@
       font-size: 0.92rem;
     }
 
-    .contact {
-      text-align: center;
-    }
+    .certification-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 290px; }
+    .certification-provider { margin-bottom: 10px; color: var(--primary); font-weight: 750; }
+    .certification-card .button { width: 100%; margin-top: 24px; }
 
+    .contact { text-align: center; }
     .contact-card {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
-      padding: 55px 30px;
-      color: white;
+      padding: 56px 30px;
+      color: #ffffff;
       background: var(--text);
       border-radius: 24px;
     }
+    .contact-card h2 { color: #ffffff; }
+    .contact-card p { max-width: 640px; margin: 0 auto 28px; color: #cbd5e1; font-size: 1.05rem; }
+    .contact-card .section-label { color: #93c5fd; }
+    .contact-card .button-secondary { color: var(--text); }
 
-    .contact-card h2 {
-      color: white;
-    }
-
-    .contact-card p {
-      max-width: 620px;
-      margin: 0 auto 28px;
-      color: #cbd5e1;
-      font-size: 1.05rem;
-    }
-
-    .contact-card .section-label {
-      color: #93c5fd;
-    }
-
-    .contact-card .button-secondary {
-      color: var(--text);
-    }
-
-    footer {
-      padding: 28px 0;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 0.9rem;
-    }
+    footer { padding: 28px 0; color: var(--muted); border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; }
 
     @media (max-width: 900px) {
-      .about-grid,
-      .services-grid,
-      .tools-grid,
-      .company-grid,
-      .experience-grid,
-      .certifications-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-content {
-        padding: 14px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        gap: 14px;
-      }
-
-      .hero {
-        padding-top: 75px;
-      }
+      .about-grid, .services-grid, .tools-grid, .company-grid, .experience-grid, .certifications-grid { grid-template-columns: 1fr; }
+      .logo-strip { grid-template-columns: repeat(2, 1fr); }
+      .nav-content { padding: 14px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 14px; }
+      .hero { padding-top: 76px; }
+      .experience-card { min-height: auto; }
     }
 
     @media (max-width: 600px) {
-      section {
-        padding: 70px 0;
-      }
-
-      .card {
-        padding: 24px;
-      }
-
-      .nav-links {
-        font-size: 0.88rem;
-      }
-
-      .contact-card {
-        padding: 42px 22px;
-      }
+      section { padding: 68px 0; }
+      .card { padding: 24px; }
+      .logo-strip { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .logo-box { height: 74px; }
+      .nav-links { font-size: 0.87rem; }
+      .contact-card { padding: 42px 22px; }
     }
   </style>
 </head>
 
 <body>
-
-  <nav>
+  <nav aria-label="Primary navigation">
     <div class="container nav-content">
-      <a class="brand" href="#home">
-        Jazmín Becerro
-      </a>
-
+      <a class="brand" href="#home">Jazmín Becerro</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -453,633 +277,232 @@
   </nav>
 
   <main>
-
     <section class="hero" id="home">
       <div class="container hero-content">
-
-        <span class="eyebrow">
-          Business Intelligence Analyst
-        </span>
-
-        <h1>
-          Transforming data into clear business decisions.
-        </h1>
-
+        <span class="eyebrow">Business Intelligence Consultant</span>
+        <h1>End-to-end Business Intelligence solutions.</h1>
         <p class="hero-description">
-          I design Business Intelligence and data visualization solutions
-          that turn complex information into intuitive dashboards,
-          reliable reporting and actionable insights.
+          From business requirements and KPI definition to data modeling,
+          interactive dashboards, validation and documentation.
+          I help organizations transform complex data into clear,
+          actionable business insights.
         </p>
-
-        <p class="tech-line">
-          Power BI · Microsoft Fabric · Databricks · SQL · Tableau
-        </p>
-
+        <p class="tech-line">Power BI · Microsoft Fabric · Databricks · SQL · Tableau · Figma</p>
         <div class="buttons">
-          <a
-            class="button button-primary"
-            href="#clients"
-          >
-            View client experience
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="https://www.linkedin.com/in/jazminbecerro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="mailto:1995.bjaz@gmail.com"
-          >
-            Email me
-          </a>
+          <a class="button button-primary" href="#clients">View client experience</a>
+          <a class="button button-secondary" href="#certifications">View certifications</a>
+          <a class="button button-secondary" href="mailto:1995.bjaz@gmail.com">Contact me</a>
         </div>
+      </div>
+    </section>
 
+    <section class="trusted-section" aria-label="Selected client experience">
+      <div class="container">
+        <p class="trusted-title">Selected client experience</p>
+        <div class="logo-strip">
+          <div class="logo-box"><img src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
+          <div class="logo-box"><img src="assets/images/abinbev.png" alt="AB InBev"></div>
+          <div class="logo-box"><img src="assets/images/toyota.png" alt="Toyota"></div>
+          <div class="logo-box"><img src="assets/images/gdm.png" alt="GDM Seeds"></div>
+          <div class="logo-box"><img src="assets/images/dietrich.png" alt="Dietrich Automotores"></div>
+        </div>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            About
-          </p>
-
-          <h2>
-            Business Intelligence focused on clarity, usability and impact.
-          </h2>
-
+          <p class="section-label">About</p>
+          <h2>Business Intelligence focused on clarity, usability and impact.</h2>
           <p class="section-description">
             I have worked in data visualization and analytics since 2019,
-            collaborating with business and technical teams across different
-            industries and enterprise environments.
+            participating in end-to-end Business Intelligence projects across multiple industries.
           </p>
         </div>
-
         <div class="about-grid">
-
           <div class="card about-text">
             <p>
-              My experience includes dashboard development, functional
-              requirements gathering, data analysis, SQL queries,
-              data validation, semantic modeling, DAX, Power Query,
-              documentation and performance optimization.
+              My experience covers functional requirements gathering,
+              KPI and metric definition, dashboard UX design, Figma mockups,
+              semantic modeling, data transformations, SQL queries,
+              dashboard development, data validation and documentation.
             </p>
-
             <p>
               I work mainly with Power BI, Microsoft Fabric and Databricks.
-              I also have experience with Tableau, Figma, dashboard mockups,
+              I also have experience with Tableau, Power Query, DAX,
               Databricks Dashboards and AI/BI Genie.
             </p>
-
             <p>
-              I focus on creating analytical solutions that are visually clear,
-              technically reliable and useful for business decision-making.
+              My goal is to create analytical solutions that are visually clear,
+              technically reliable and useful for decision-making.
             </p>
           </div>
-
           <div class="card facts">
-
-            <div class="fact">
-              <strong>7+ years</strong>
-              <span>
-                Data visualization and Business Intelligence experience
-              </span>
-            </div>
-
-            <div class="fact">
-              <strong>3 certifications</strong>
-              <span>
-                Microsoft and Databricks credentials
-              </span>
-            </div>
-
-            <div class="fact">
-              <strong>Rio de Janeiro, Brazil</strong>
-              <span>
-                Available for remote and freelance projects
-              </span>
-            </div>
-
+            <div class="fact"><strong>6+ years</strong><span>Business Intelligence and data visualization experience</span></div>
+            <div class="fact"><strong>3 certifications</strong><span>Microsoft and Databricks credentials</span></div>
+            <div class="fact"><strong>Rio de Janeiro, Brazil</strong><span>Available for freelance and remote projects</span></div>
           </div>
-
         </div>
       </div>
     </section>
 
     <section id="services">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            Services
-          </p>
-
-          <h2>
-            Business Intelligence and analytics services.
-          </h2>
-
+          <p class="section-label">How I can help</p>
+          <h2>Business Intelligence services from discovery to delivery.</h2>
           <p class="section-description">
-            Solutions focused on dashboard development, visualization,
-            reporting, data validation and performance.
+            Support throughout the complete analytics lifecycle,
+            from understanding the business need to delivering a validated and usable dashboard.
           </p>
         </div>
-
         <div class="services-grid">
-
-          <article class="card service-card">
-            <h3>Power BI Dashboard Development</h3>
-            <p>
-              Interactive dashboards, semantic models, DAX measures,
-              Power Query transformations and business-focused reports.
-            </p>
-          </article>
-
-          <article class="card service-card">
-            <h3>Business Intelligence Consulting</h3>
-            <p>
-              Requirements analysis, KPI definition, reporting strategy
-              and collaboration with business and technical stakeholders.
-            </p>
-          </article>
-
-          <article class="card service-card">
-            <h3>Microsoft Fabric Solutions</h3>
-            <p>
-              Analytics and Business Intelligence solutions using the
-              Microsoft Fabric ecosystem.
-            </p>
-          </article>
-
-          <article class="card service-card">
-            <h3>Databricks Analytics</h3>
-            <p>
-              SQL queries, data analysis, validation, Databricks Dashboards
-              and analytical reporting.
-            </p>
-          </article>
-
-          <article class="card service-card">
-            <h3>Dashboard Optimization</h3>
-            <p>
-              Performance analysis and improvement of Power BI models,
-              DAX measures, queries and visual interactions.
-            </p>
-          </article>
-
-          <article class="card service-card">
-            <h3>Dashboard Design</h3>
-            <p>
-              Wireframes, mockups and dashboard UI concepts created
-              with Figma and aligned with business requirements.
-            </p>
-          </article>
-
+          <article class="card service-card"><h3>Business Intelligence Consulting</h3><p>Requirements gathering, business analysis, reporting strategy and collaboration with functional and technical stakeholders.</p></article>
+          <article class="card service-card"><h3>Power BI Dashboard Development</h3><p>Interactive dashboards, semantic models, DAX measures, Power Query transformations and business-focused reports.</p></article>
+          <article class="card service-card"><h3>KPI and Metrics Definition</h3><p>Definition of indicators, metrics and visualizations aligned with business objectives and decision-making needs.</p></article>
+          <article class="card service-card"><h3>Databricks Analytics</h3><p>SQL analysis, data validation, Databricks Dashboards and process-monitoring reports.</p></article>
+          <article class="card service-card"><h3>Dashboard Optimization</h3><p>Improvement of Power BI models, DAX measures, queries, visual interactions and overall report performance.</p></article>
+          <article class="card service-card"><h3>Dashboard UX and Mockups</h3><p>Wireframes, Figma mockups and dashboard interfaces designed around business users and reporting objectives.</p></article>
         </div>
       </div>
     </section>
 
     <section id="tools">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            Tools and capabilities
-          </p>
-
-          <h2>
-            Technologies used to build reliable analytics solutions.
-          </h2>
+          <p class="section-label">Tools and capabilities</p>
+          <h2>Technologies used to build reliable analytics solutions.</h2>
         </div>
-
         <div class="tools-grid">
-
-          <article class="card tool-card">
-            <h3>Business Intelligence</h3>
-            <p>
-              Power BI, Microsoft Fabric, Tableau and Databricks Dashboards.
-            </p>
-          </article>
-
-          <article class="card tool-card">
-            <h3>Data and modeling</h3>
-            <p>
-              SQL, DAX, Power Query, data modeling, semantic models
-              and data validation.
-            </p>
-          </article>
-
-          <article class="card tool-card">
-            <h3>Design and delivery</h3>
-            <p>
-              Figma, wireframes, dashboard mockups, documentation,
-              requirements analysis and agile collaboration.
-            </p>
-          </article>
-
+          <article class="card tool-card"><h3>Business Intelligence</h3><p>Power BI, Microsoft Fabric, Tableau, Databricks Dashboards and AI/BI Genie.</p></article>
+          <article class="card tool-card"><h3>Data and modeling</h3><p>SQL, DAX, Power Query, Dataflows, semantic models and data validation.</p></article>
+          <article class="card tool-card"><h3>Design and delivery</h3><p>Figma, wireframes, dashboard mockups, documentation, testing and agile collaboration.</p></article>
         </div>
       </div>
     </section>
 
     <section id="professional-experience">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            Professional experience
-          </p>
-
-          <h2>
-            Consulting experience across multiple industries.
-          </h2>
-
-          <p class="section-description">
-            My consulting roles have allowed me to participate in
-            Business Intelligence initiatives for global and regional clients.
-          </p>
+          <p class="section-label">Professional experience</p>
+          <h2>Consulting experience across different industries.</h2>
+          <p class="section-description">My consulting roles have allowed me to contribute to Business Intelligence solutions for global and regional organizations.</p>
         </div>
-
         <div class="company-grid">
-
           <article class="card company-card">
-            <span class="company-period">
-              July 2021 – Present
-            </span>
-
-            <h3>
-              Lovelytics LATAM
-            </h3>
-
-            <p>
-              Business Intelligence Analyst providing analytics and
-              data visualization services for clients including AB InBev,
-              Toyota, GDM Seeds and Dietrich Automotores.
-            </p>
-
-            <span class="tag">
-              Business Intelligence Consulting
-            </span>
+            <span class="company-period">July 2021 – Present</span>
+            <h3>Lovelytics LATAM</h3>
+            <p>Business Intelligence Analyst providing analytics, dashboard development and data visualization services for clients across consumer goods, automotive, agriculture and customer analytics.</p>
+            <span class="tag">Business Intelligence Consulting</span>
           </article>
-
           <article class="card company-card">
-            <span class="company-period">
-              Previous consulting experience
-            </span>
-
-            <h3>
-              Quales Group
-            </h3>
-
-            <p>
-              Data visualization and Business Intelligence consulting,
-              including work for Mercado Libre and its Mercado Pago business area.
-            </p>
-
-            <span class="tag">
-              Data Visualization Consulting
-            </span>
+            <span class="company-period">April 2019 – March 2020</span>
+            <h3>Quales Group</h3>
+            <p>Business Intelligence and data visualization consulting, including dashboard development for Mercado Libre and its Mercado Pago business area.</p>
+            <span class="tag">Data Visualization Consulting</span>
           </article>
-
         </div>
       </div>
     </section>
 
     <section id="clients">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            Selected client experience
-          </p>
-
-          <h2>
-            Business Intelligence projects across different industries.
-          </h2>
-
-          <p class="section-description">
-            A selection of organizations and business areas where I have
-            contributed to analytics, reporting and data visualization initiatives.
-          </p>
+          <p class="section-label">Selected client experience</p>
+          <h2>Analytics projects supporting real business decisions.</h2>
+          <p class="section-description">A brief overview of selected organizations, business areas and analytical solutions in which I participated.</p>
         </div>
-
         <div class="experience-grid">
-
           <article class="card experience-card">
-            <span class="industry">
-              E-commerce and financial services
-            </span>
-
-            <h3>
-              Mercado Libre
-            </h3>
-
-            <p>
-              Business Intelligence and data visualization work for
-              the Mercado Pago business area.
-            </p>
-
-            <ul>
-              <li>
-                Dashboard development and reporting.
-              </li>
-
-              <li>
-                Functional requirements gathering and analysis.
-              </li>
-
-              <li>
-                Data analysis, validation and documentation.
-              </li>
-            </ul>
+            <div class="client-logo"><img src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
+            <span class="industry">E-commerce and financial services</span>
+            <h3>Mercado Libre</h3>
+            <p class="client-area">Mercado Pago</p>
+            <p>Developed dashboards from scratch to support business analysis and decision-making.</p>
+            <ul><li>KPI, metric and visualization definition.</li><li>Dashboard UX and layout design.</li><li>Data validation and documentation.</li></ul>
           </article>
 
           <article class="card experience-card">
-            <span class="industry">
-              Consumer goods
-            </span>
-
-            <h3>
-              AB InBev
-            </h3>
-
-            <p>
-              Participation in Business Intelligence reporting and
-              analytical initiatives.
-            </p>
-
-            <ul>
-              <li>
-                Dashboard development and maintenance.
-              </li>
-
-              <li>
-                Business requirements analysis.
-              </li>
-
-              <li>
-                Data validation, documentation and reporting support.
-              </li>
-            </ul>
+            <div class="client-logo"><img src="assets/images/abinbev.png" alt="AB InBev"></div>
+            <span class="industry">Consumer goods</span>
+            <h3>AB InBev</h3>
+            <p class="client-area">Sales Analytics — Bolivia</p>
+            <p>Developed an end-to-end sales reporting solution.</p>
+            <ul><li>UX design, KPI and metric definition.</li><li>Data model, transformations and Dataflows.</li><li>Data validation and project documentation.</li></ul>
           </article>
 
           <article class="card experience-card">
-            <span class="industry">
-              Mobility and automotive
-            </span>
-
-            <h3>
-              Toyota
-            </h3>
-
-            <p>
-              Business Intelligence work for KINTO, Toyota's vehicle
-              rental and mobility business area, followed by projects
-              for financial analysis.
-            </p>
-
-            <ul>
-              <li>
-                Dashboards for appointment tracking.
-              </li>
-
-              <li>
-                Analysis of vehicle availability.
-              </li>
-
-              <li>
-                Financial analysis and reporting dashboards.
-              </li>
-            </ul>
+            <div class="client-logo"><img src="assets/images/toyota.png" alt="Toyota"></div>
+            <span class="industry">Mobility, automotive and finance</span>
+            <h3>Toyota</h3>
+            <p class="client-area">KINTO Share, KINTO Fleet and Financial Analysis</p>
+            <p>Designed and developed analytics solutions for vehicle reservations, fleet availability and financial reporting.</p>
+            <ul><li>Figma mockups and dashboard UX.</li><li>KPI, metric and visualization definition.</li><li>Data modeling and end-to-end development.</li></ul>
           </article>
 
           <article class="card experience-card">
-            <span class="industry">
-              Agriculture and research
-            </span>
-
-            <h3>
-              GDM Seeds
-            </h3>
-
-            <p>
-              Analytics and reporting solutions for Research and Development,
-              supporting seed analysis and selection processes.
-            </p>
-
-            <ul>
-              <li>
-                Power BI dashboard development and optimization.
-              </li>
-
-              <li>
-                Databricks dashboards and analytical queries.
-              </li>
-
-              <li>
-                Data validation and analysis for seed selection.
-              </li>
-            </ul>
+            <div class="client-logo"><img src="assets/images/gdm.png" alt="GDM Seeds"></div>
+            <span class="industry">Agriculture and research</span>
+            <h3>GDM Seeds</h3>
+            <p class="client-area">Research and Development</p>
+            <p>Business Intelligence solutions supporting seed analysis, selection and process monitoring.</p>
+            <ul><li>Model and performance optimization.</li><li>SQL queries and data validation.</li><li>Process-monitoring dashboards.</li></ul>
           </article>
 
           <article class="card experience-card">
-            <span class="industry">
-              Automotive and CRM
-            </span>
-
-            <h3>
-              Dietrich Automotores
-            </h3>
-
-            <p>
-              Business Intelligence initiatives involving several
-              CRM data sources and operational reporting needs.
-            </p>
-
-            <ul>
-              <li>
-                Data quality dashboards.
-              </li>
-
-              <li>
-                CRM reporting and analysis.
-              </li>
-
-              <li>
-                Functional requirements, documentation and data modeling.
-              </li>
-            </ul>
+            <div class="client-logo"><img src="assets/images/dietrich.png" alt="Dietrich Automotores"></div>
+            <span class="industry">Automotive, CRM and customer analytics</span>
+            <h3>Dietrich Automotores</h3>
+            <p class="client-area">Data Quality, Conversions, Customers, Products and Loyalty</p>
+            <p>Developed end-to-end analytics solutions supporting CRM data quality, lead conversion, customer analysis, cross-selling and loyalty.</p>
+            <ul><li>Figma mockups and functional requirements.</li><li>KPIs, data models and dashboard development.</li><li>Data validation, documentation and testing.</li></ul>
           </article>
-
         </div>
-
-        <div class="confidentiality-note">
-          Due to confidentiality agreements, proprietary data,
-          dashboard screenshots and sensitive business information
-          are not publicly displayed.
-        </div>
-
+        <div class="confidentiality-note">Due to confidentiality agreements, proprietary data, dashboard screenshots and sensitive business information are not publicly displayed.</div>
       </div>
     </section>
 
     <section id="certifications">
       <div class="container">
-
         <div class="section-header">
-          <p class="section-label">
-            Certifications
-          </p>
-
-          <h2>
-            Industry-recognized credentials.
-          </h2>
-
-          <p class="section-description">
-            Microsoft and Databricks credentials supporting my
-            Business Intelligence and analytics experience.
-          </p>
+          <p class="section-label">Certifications</p>
+          <h2>Industry-recognized credentials.</h2>
+          <p class="section-description">Microsoft and Databricks certifications supporting my Business Intelligence and analytics experience.</p>
         </div>
-
         <div class="certifications-grid">
-
           <article class="card certification-card">
-            <div>
-              <p class="certification-provider">
-                Microsoft
-              </p>
-
-              <h3>
-                Power BI Data Analyst Associate
-              </h3>
-
-              <p>
-                PL-300 certification. Valid through October 2026.
-              </p>
-            </div>
-
-            <a
-              class="button button-primary"
-              href="https://learn.microsoft.com/api/credentials/share/en-us/JazmnBecerro-7819/BAED6C357AB7CECA?sharingId=227985F9129D28DD"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View credential →
-            </a>
+            <div><p class="certification-provider">Microsoft</p><h3>Power BI Data Analyst Associate</h3><p>PL-300 certification. Valid through October 2026.</p></div>
+            <a class="button button-primary" href="https://learn.microsoft.com/api/credentials/share/en-us/JazmnBecerro-7819/BAED6C357AB7CECA?sharingId=227985F9129D28DD" target="_blank" rel="noopener noreferrer">View credential →</a>
           </article>
-
           <article class="card certification-card">
-            <div>
-              <p class="certification-provider">
-                Microsoft
-              </p>
-
-              <h3>
-                Fabric Analytics Engineer Associate
-              </h3>
-
-              <p>
-                DP-600 certification for Microsoft Fabric analytics solutions.
-              </p>
-            </div>
-
-            <a
-              class="button button-primary"
-              href="https://learn.microsoft.com/api/credentials/share/en-us/JazminBecerro-7587/CD8CCD75314B8B9A?sharingId=58DCB206DCAE7481"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View credential →
-            </a>
+            <div><p class="certification-provider">Microsoft</p><h3>Fabric Analytics Engineer Associate</h3><p>DP-600 certification for Microsoft Fabric analytics solutions.</p></div>
+            <a class="button button-primary" href="https://learn.microsoft.com/api/credentials/share/en-us/JazminBecerro-7587/CD8CCD75314B8B9A?sharingId=58DCB206DCAE7481" target="_blank" rel="noopener noreferrer">View credential →</a>
           </article>
-
           <article class="card certification-card">
-            <div>
-              <p class="certification-provider">
-                Databricks
-              </p>
-
-              <h3>
-                Certified Data Analyst Associate
-              </h3>
-
-              <p>
-                Databricks analytics, SQL and dashboard certification.
-              </p>
-            </div>
-
-            <a
-              class="button button-primary"
-              href="https://credentials.databricks.com/2c42e70d-6cf3-44b6-875c-dc4894d88f7e#acc.lxWLJsn1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View credential →
-            </a>
+            <div><p class="certification-provider">Databricks</p><h3>Certified Data Analyst Associate</h3><p>Databricks analytics, SQL and dashboard certification.</p></div>
+            <a class="button button-primary" href="https://credentials.databricks.com/2c42e70d-6cf3-44b6-875c-dc4894d88f7e#acc.lxWLJsn1" target="_blank" rel="noopener noreferrer">View credential →</a>
           </article>
-
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container">
-
         <div class="contact-card">
-
-          <p class="section-label">
-            Contact
-          </p>
-
-          <h2>
-            Let’s build a clearer view of your business data.
-          </h2>
-
-          <p>
-            Available for freelance and remote Business Intelligence projects,
-            dashboard development, data visualization, reporting optimization
-            and analytics consulting.
-          </p>
-
-          <div
-            class="buttons"
-            style="justify-content: center;"
-          >
-
-            <a
-              class="button button-primary"
-              href="mailto:1995.bjaz@gmail.com"
-            >
-              Email me
-            </a>
-
-            <a
-              class="button button-secondary"
-              href="https://www.linkedin.com/in/jazminbecerro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-
+          <p class="section-label">Contact</p>
+          <h2>Let’s transform your business data into clear decisions.</h2>
+          <p>Available for freelance and remote Business Intelligence projects, dashboard development, data visualization, reporting optimization and analytics consulting.</p>
+          <div class="buttons" style="justify-content: center;">
+            <a class="button button-primary" href="mailto:1995.bjaz@gmail.com">Email me</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/jazminbecerro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
-
       </div>
     </section>
-
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Jazmín Becerro · Business Intelligence Portfolio ·
-      Rio de Janeiro, Brazil
-    </div>
+    <div class="container">© 2026 Jazmín Becerro · Business Intelligence Portfolio · Rio de Janeiro, Brazil</div>
   </footer>
-
 </body>
 </html>
