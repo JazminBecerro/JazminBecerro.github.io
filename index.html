@@ -198,13 +198,12 @@
     .company-period { display: block; margin-bottom: 12px; color: var(--primary); font-size: 0.85rem; font-weight: 800; }
 
     .experience-grid {
-      align-items: stretch;
+      align-items: start;
     }
 
     .experience-card {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+      height: auto;
+      display: block;
     }
 
     .client-logo {
@@ -305,18 +304,7 @@
       .nav-content { padding: 14px 0; align-items: flex-start; flex-direction: column; }
       .nav-links { gap: 14px; }
       .hero { padding-top: 76px; }
-      .experience-card { min-height: auto; }
 
-      .industry,
-      .experience-card h3,
-      .client-area,
-      .experience-card > p:not(.client-area) {
-        min-height: 0;
-      }
-
-      .experience-card ul {
-        margin-top: 18px;
-      }
     }
 
     @media (max-width: 600px) {
