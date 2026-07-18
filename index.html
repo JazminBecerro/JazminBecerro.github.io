@@ -197,11 +197,36 @@
     .company-card { min-height: 245px; }
     .company-period { display: block; margin-bottom: 12px; color: var(--primary); font-size: 0.85rem; font-weight: 800; }
 
-    .experience-card { min-height: 390px; display: flex; flex-direction: column; }
-    .client-logo { height: 68px; margin-bottom: 24px; display: flex; align-items: center; justify-content: flex-start; }
-    .client-logo img { max-width: 190px; max-height: 64px; object-fit: contain; object-position: left center; }
+    .experience-grid {
+      align-items: stretch;
+    }
+
+    .experience-card {
+      min-height: 430px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .client-logo {
+      width: 100%;
+      height: 72px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .client-logo img {
+      max-width: 180px;
+      max-height: 60px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
     .industry {
       display: block;
+      min-height: 42px;
       margin-bottom: 9px;
       color: var(--primary);
       font-size: 0.78rem;
@@ -209,9 +234,37 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
-    .client-area { margin-bottom: 13px; color: #334155; font-weight: 750; }
-    .experience-card ul { margin-top: 15px; padding-left: 20px; color: var(--muted); }
-    .experience-card li + li { margin-top: 7px; }
+
+    .experience-card h3 {
+      min-height: 30px;
+    }
+
+    .client-area {
+      min-height: 52px;
+      margin-bottom: 13px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .experience-card > p:not(.client-area) {
+      min-height: 104px;
+    }
+
+    .experience-card ul {
+      width: 100%;
+      margin-top: auto;
+      padding-top: 18px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .experience-card li {
+      padding-left: 2px;
+    }
+
+    .experience-card li + li {
+      margin-top: 7px;
+    }
     .confidentiality-note {
       margin-top: 28px;
       padding: 20px 24px;
@@ -248,6 +301,17 @@
       .nav-links { gap: 14px; }
       .hero { padding-top: 76px; }
       .experience-card { min-height: auto; }
+
+      .industry,
+      .experience-card h3,
+      .client-area,
+      .experience-card > p:not(.client-area) {
+        min-height: 0;
+      }
+
+      .experience-card ul {
+        margin-top: 18px;
+      }
     }
 
     @media (max-width: 600px) {
@@ -285,7 +349,7 @@
           From business requirements and KPI definition to data modeling,
           interactive dashboards, validation and documentation.
           I help organizations transform complex data into clear,
-          actionable business insights.
+          actionable insights that enable data-driven decision-making.
         </p>
         <p class="tech-line">Power BI · Microsoft Fabric · Databricks · SQL · Tableau · Figma</p>
         <div class="buttons">
@@ -300,7 +364,7 @@
       <div class="container">
         <p class="trusted-title">Selected client experience</p>
         <div class="logo-strip">
-          <div class="logo-box"><img src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
+          <div class="logo-box"><img class="logo-mercado" src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
           <div class="logo-box"><img src="assets/images/abinbev.png" alt="AB InBev"></div>
           <div class="logo-box"><img src="assets/images/toyota.png" alt="Toyota"></div>
           <div class="logo-box"><img src="assets/images/gdm.png" alt="GDM Seeds"></div>
@@ -414,7 +478,7 @@
         </div>
         <div class="experience-grid">
           <article class="card experience-card">
-            <div class="client-logo"><img src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
+            <div class="client-logo"><img class="logo-mercado" src="assets/images/mercado-libre.png" alt="Mercado Libre"></div>
             <span class="industry">E-commerce and financial services</span>
             <h3>Mercado Libre</h3>
             <p class="client-area">Mercado Pago</p>
